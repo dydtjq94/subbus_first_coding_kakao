@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Nomad Coders" />
+    <meta name="description" content="Welcome to my kakao Clone" />
+    <title>position</title>
+
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 400%;
+        background-color: red;
+      }
+      /* #boxone {
+        background-color: yellow;
+        width: 200px;
+        height: 200px;
+        position: static;
+      } */
+
+      /* position fixed 
+      #boxtwo {
+        background-color: green;
+        width: 2000px;
+        height: 200px;
+        position: fixed;
+        left: 500px;
+
+        bottom: 30px;
+      } */
+
+      .abs-box {
+        background-color: blue;
+        width: 400px;
+        height: 400px;
+        right: 0;
+        position: relative;
+      }
+      .abs-child {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        position: absolute;
+        right: 0;
+        top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="abs-box">
+      <div class="abs-child"></div>
+    </div>
+    <!-- <div id="boxone">
+      <div class="box-child"></div>
+    </div>
+    <div id="boxtwo">
+      <div class="box-child"></div>
+    </div> -->
+  </body>
+</html>

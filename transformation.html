@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Nomad Coders" />
+    <meta name="description" content="Welcome to my kakao Clone" />
+    <title>transformation&animation</title>
+    <style>
+      .box {
+        width: 500px;
+        height: 500px;
+        background-color: red;
+        animation: 1.5s scalesAndRotateSquare infinite ease-in-out;
+      }
+
+      @keyframes scalesAndRotateSquare {
+        0% {
+          transform: none;
+        }
+        50% {
+          transform: rotate(1turn) scale(0.5, 0.5);
+          background-color: white;
+        }
+        100% {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
